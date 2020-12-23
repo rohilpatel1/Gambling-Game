@@ -2,6 +2,10 @@
 #include <iostream>
 #include <string>
 
+#include "../commandMaker.hpp"
+
+void initCommands();
+
 void help() {
 	std::cout
 	<< "List of commands: \n\n"
@@ -10,11 +14,6 @@ void help() {
 	<< "'bal'\n"
 	<< "  Displays current balance in wallet."
 	<< std::endl;
-}
 
-void initCommands() {
-	std::string userInput;
-	std::cout << ">> ";
-
-	std::getline(std::cin, userInput);
+  initCommands();
 }

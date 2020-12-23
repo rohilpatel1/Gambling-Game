@@ -1,10 +1,11 @@
 #include <iostream>
-#include <fstream>
+#include <string>
 
-#include "src/menu.hpp"
+#include "src/libs/filesystem.hpp"
+#include "src/commandMaker.hpp"
+#include "src/commands/help.hpp"
 
 int main() {
-	help();
-	
+  initCommands();
   return 0;
 }
